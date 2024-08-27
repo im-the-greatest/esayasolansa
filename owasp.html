@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+
+.body{
+    background-color: rgb(166, 196, 162);
+
+}
+.fixed-button {
+            position: fixed;
+            top: 10px; /* Adjust the distance from the top */
+            right: 1px; /* Adjust the distance from the left */
+            padding: 10px 20px;
+            background-color: #0b0c0e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000; /* Ensure it's above other content */
+        }
+        .fixed-back {
+    position: fixed;
+    top: 10px; /* Adjust the distance from the top */
+    right: 10; /* Adjust the distance from the left */
+    padding: 10px 10px;
+    background-color: #0b0c0e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other content */
+}
+.end-button {
+                position: fixed;
+                bottom: 10px; /* Adjust the distance from the top */
+                right: 1px; /* Adjust the distance from the left */
+                padding: 10px 20px;
+                background-color: #0b0c0e;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                z-index: 1000; /* Ensure it's above other content */
+            }
+            .up-button {
+                position: fixed;
+                bottom: 10px; /* Adjust the distance from the top */
+                left: 50%; /* Adjust the distance from the left */
+                padding: 10px 20px;
+                background-color: #0b0c0e;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                z-index: 1000; /* Ensure it's above other content */
+            }
+            .previous-button {
+                position: fixed;
+                bottom: 10px; /* Adjust the distance from the top */
+                left: 1px; /* Adjust the distance from the left */
+                padding: 10px 20px;
+                background-color: #0b0c0e;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                z-index: 1000; /* Ensure it's above other content */
+            }
+        </style>
+     <type> OWASP TOP 10</type>   
+    </head>
+<body class="body">
+<ol>
+
+
+<li><H1>introduction </H1></li>
+
+
+it's only read 
+i read that top 10 of owasp 
+that is ncludes details on what 
+the vulnerability is, how it occurs
+ and how you can exploit it
+ <img src="owasp1.png" >
+
+
+<li><h1>accessing machine</h1></li>
+
+
+this room is how to connect to vpn or how to open vpn in window and use 
+use an in browserlinux machine
+<img src="owasp2.png">
+<li><H1>[SEVERITY 1] injection</H1></li>
+
+
+this one is only read about inection that is about example of injection 
+and the method of attacker succesfully interpreated 
+also the main deffense of preventing injection<br><hr>
+<img src="owasp3.png"> <br>
+<img src="owasp3_1.png"><br>
+<li><H1>[SEVERITY 1]OS command injection</H1></li>
+
+
+this one is also read and that define Command Injection occurs when server-side code (like PHP) in
+ a web application makes a system call on the hosting machine
+ <img src="owasp4.png">
+
+
+<li><H1>[SEVERITY 1] command injection practical</H1></li>
+
+
+<p>
+this is practical and talk about 2 things those are <br><hr>
+---What is Active Command Injection?<hr><br>
+Blind command injection occurs when the system command made to the server
+ does not return the response to the user in the HTML document
+for example we look evilshell code is example of that <br>
+<img src="owasp5_1.png">
+<br>
+---Ways to Detect Active Command Injection<hr>
+We know that active command injection occurs
+ when you can see the response from the system call
+ those commands are 
+ <ul>
+ <hr>Linux<hr>
+<li>whoami</li>
+<li>id</li>
+<li>ifconfig/ip addr</li>
+<li>uname -a</li>
+<li>ps -ef</li>
+</ul>
+<hr>Windows<hr>
+<ul>
+<li>whoami</li>
+<li>ver</li>
+<li>ipconfig</li>
+<li>tasklist</li>
+<li>netstat -an</li></ul>
+1. the first question i solve that  by use command that is ""ls""
+and get this his answer <br>
+<br>
+<img src="owasp6_1.png"><br>
+<br>
+2. the second one is use command ""ps -ef""<br>
+<br>
+<img src="owasp6_2.png"><br>
+<br>
+3.  the third is use command ""whoami""<br>
+<br>
+<img src="owasp6_3.png"><br>
+<br>
+4. the fourth is use command ""cat /etc/passwd | grep www-data""<br>
+<br>
+<img src="owasp6_4.png"><br>
+<br>
+5. the fifth is use command ""lsb_release -a""<br>
+<br>
+<img src="owasp6_5.png"><br>
+<br>
+6 the sixth is use command ""locate motd""<hr>
+
+# "i look that from Ai"<hr>
+</P>
+
+
+<li><H1>[severity 2]broken authentication </H1></li>
+
+
+
+<p>
+    this one is only read that talk about 
+    authentication mechanisms
+    this means
+    Authentication and session management constitute core 
+    components of modern web applications.
+     Authentication allows users to
+     gain access to web applications by verifying their identities
+some common authentication mechanisms 
+-brute force
+-use of weak credentials
+-weaksession Cookies
+<img src="owasp7.png">
+</p>
+
+
+<li><H1>[severity 2] broken authentication practical</H1></li>
+
+<br>
+<p> 
+    this talk about   we'll be
+     looking at a logic flaw within the authentication mechanism.<br>
+     such as usernames and passwords.<br> <br><hr><img src="owasp7_1.png"><br><hr>
+     What is the flag that you found in darren's account?<br><hr>
+     <img src="owasp7_2.png">
+     <hr> <br>
+What is the flag that you found in arthur's account?
+<img src="owasp7_3.png">
+</p>
+
+
+<li><H1>[severity 3] sensitive data exposure(introduction)</H1></li>
+<p>
+    this one is also read that talk about sensitive
+     data exposure and deploy a machine
+     When a webapp accidentally divulges sensitive data, 
+     we refer to it as "Sensitive Data Exposure".
+      This is often data directly linked to customers 
+      (e.g. names, dates-of-birth, financial information, 
+      etc), but could also be more technical information,
+     
+
+
+</p>
+
+<li><H1>[severity 3] sensitive data exposure (supporting material 1) </H1></li>
+<p>
+this one is read  that is continue on previous talk about 
+ cover how to crack these. When it comes to hash cracking, Kali 
+ comes pre-installed with various tools -- if you know how to 
+ use these then feel free t
+ o do so; however, they are outwith the scope of this material.
+ it's no need answer<br><hr>
+ <img src="owasp9.png">
+</p>
+<li><H1>[severity 3]sensitive data exposure (supporting material 2)</H1></li>
+<p>this one is also no nead question but talk about  Database 
+engines usually follow the Structured Query Language (SQL) 
+syntax; however, 
+alternative formats (such as NoSQL) are rising in popularity.</p>
+
+<li><H1>[severity 3] sensitive data exposure (challenge)</H1></li>
+<p>
+    this talk about  how to crack and When it comes to hash 
+    cracking, Kali comes pre-installed with various tools 
+    -- if you know how to use these then feel free to do so; 
+    however, they are outwith the scope of this material.
+    <img src="owasp10_1.png">
+    <img src="owasp10_2.png">
+    <img src="owasp10.png">
+</p>
+<li><H1>[severity 2] xml external entity</H1></li>
+
+<li><H1>[severity 4] xml external entity estensible markup language</H1></li>
+
+<li><H1>[severity 4] xml external entity -dtd</H1></li>
+
+<li><H1>[severity 4]xml external entity -xxe payload</H1></li>
+
+<li><H1>[severity 4]xml external entity exploiting</H1></li>
+
+<li><H1>[severity 5] broken access control</H1></li>
+
+<li><H1>[severity 5] broken access control(IDOR) challenge</H1></li>
+
+<li><H1>[severity 7]security misconfiguration</H1></li>
+
+<li><H1>[severity 8]cross-site scripting</H1></li>
+
+<li><H1>[severity 8]insecure deserialization - object</H1></li>
+
+<li><H1>[severity 8]Insecure Deserialization - Deserialization</H1></li>
+
+<li><h1>[Severity 8] Insecure Deserialization - Cookies</h1></li>
+
+<li><h1>[Severity 8] Insecure Deserialization - Cookies Practical</h1></li>
+
+
+<li><h1>[Severity 8] Insecure Deserialization - Code Execution</h1></li>
+
+<li><h1>[Severity 9] Components With Known Vulnerabilities - Intro</h1></li>
+
+<li><h1>[Severity 9] Components With Known Vulnerabilities - Exploit</h1></li>
+
+<li><h1>[Severity 9] Components With Known Vulnerabilities - Lab</h1></li>
+
+<li><h1>[Severity 10] Insufficient Logging and Monitoring</h1></li>
+
+<li><h1>What Next?</h1></li>
+</li>
+</ol>
+
+
+<a href="#top" class="up-button"><input type="button" value="up " id="myButton" ></a></a><nav></nav>
+<a href="injection.html" class="end-button"><input type="button" value="NEXT " id="myButton" ></a></a><nav></nav>
+<a href="cover.html" class="previous-button"><input type="button" value="PREVIOUS " id="myButton" ></a></a><nav></nav>
+<a href="cover.html" class="fixed-button">
+    Go to First Page</a>
+    <a href="cover.html" class="fixed-back">
+        back</a>
+</body>
+    </html>
